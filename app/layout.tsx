@@ -5,7 +5,7 @@ import "./globals.css";
 
 import React from "react";
 import { ClerkProvider } from "@clerk/nextjs";
-import { ThemeProvider } from "../context/ThemeProvider";
+import { ThemeProvider } from "../context/Theme/ThemeProvider";
 
 const inter = Inter({
   subsets: ["latin"],
