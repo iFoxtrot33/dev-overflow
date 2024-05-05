@@ -5,6 +5,7 @@
 <a href="https://codeclimate.com/github/iFoxtrot33/dev-overflow/maintainability"><img src="https://api.codeclimate.com/v1/badges/49640875bc40849ad5aa/maintainability" /></a>
 
 ![Linter workflow](https://github.com/iFoxtrot33/dev-overflow/actions/workflows/lint.yml/badge.svg)
+![Tests workflow](https://github.com/iFoxtrot33/dev-overflow/actions/workflows/tests.yml/badge.svg)
 
 ## 🛠Stack:
 * Next.js 14
