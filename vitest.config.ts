@@ -7,7 +7,8 @@ export default defineConfig({
     environment: "jsdom",
     globals: true,
     coverage: {
-      exclude: ["**/app/**", "**/*.ts", "**/*.mjs"],
+      exclude: ["**/app/**", "**/*.ts", "**/*.mjs", "**/*.js"],
+      reporter: ["text", "lcov"],
     },
   },
 });
