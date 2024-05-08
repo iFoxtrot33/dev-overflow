@@ -1,18 +1,16 @@
 import React from "react";
 import { describe, it, expect, vi, beforeEach } from "vitest";
 import { render, screen, act } from "@testing-library/react";
-import { ThemeContext, ThemeProvider } from "./ThemeProvider"; // Adjust the import path as necessary
+import { ThemeProvider } from "./ThemeProvider";
 import { handleThemeChange } from "./utils";
 import { useTheme } from "./hooks";
 
-// Mock the handleThemeChange function
 vi.mock("./utils", () => ({
   handleThemeChange: vi.fn(),
 }));
 
 describe("ThemeProvider", () => {
   beforeEach(() => {
-    // Clear all mocks before each test
     vi.clearAllMocks();
   });
 
@@ -33,7 +31,6 @@ describe("ThemeProvider", () => {
       </ThemeProvider>
     );
 
-    // Simulate changing the theme mode
     act(() => {
       screen.getByTestId("change-theme-button").click();
     });
@@ -43,7 +40,6 @@ describe("ThemeProvider", () => {
   });
 });
 
-// Helper component to test context functionality
 function TestComponent() {
   const { mode, setMode } = useTheme();
 
